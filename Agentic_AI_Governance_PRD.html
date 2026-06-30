@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Siloam Agentic AI Governance — PRD</title>
+<style>
+  :root{--navy:#1E2761;--navy2:#141A45;--gold:#E0A82E;--goldd:#B07A12;--slate:#475069;
+        --muted:#8A93A8;--panel:#EEF2FA;--panel2:#E3E9F5;--green:#1C7A4A;--red:#B0463C;--line:#D5DCEA;}
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#222;background:#fff;line-height:1.5;}
+  .wrap{max-width:1100px;margin:0 auto;padding:32px 28px 60px;}
+  .kick{color:var(--goldd);font-weight:700;letter-spacing:2px;font-size:12px;}
+  h1{color:var(--navy);font-size:30px;margin:4px 0 6px;}
+  .sub{color:var(--slate);font-size:15px;margin-bottom:6px;}
+  .meta{color:var(--muted);font-size:12px;font-style:italic;border-bottom:1px solid var(--line);padding-bottom:16px;}
+  h2{color:var(--navy);font-size:19px;margin:30px 0 12px;}
+  .callout{background:var(--panel);border-radius:10px;padding:14px 18px;color:var(--slate);font-size:14px;margin:14px 0;}
+  .callout b{color:var(--navy);}
+  /* pillars */
+  .pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+  .pillar{background:var(--navy);color:#fff;border-radius:10px;padding:14px;}
+  .pillar .n{background:var(--gold);color:var(--navy2);font-weight:800;width:30px;height:30px;border-radius:50%;
+            display:flex;align-items:center;justify-content:center;font-size:15px;margin-bottom:8px;}
+  .pillar h3{margin:0 0 6px;font-size:14px;}
+  .pillar p{margin:0;font-size:12px;color:#CADCFC;}
+  /* roles table */
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px;}
+  th{background:var(--navy);color:#fff;text-align:left;padding:9px 11px;font-size:12.5px;}
+  td{padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--slate);}
+  td b{color:var(--navy);}
+  tr:nth-child(even) td{background:#F7F9FC;}
+  /* kanban */
+  .kan{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  .col{background:var(--panel2);border-radius:10px;padding:10px;}
+  .col .head{font-weight:800;color:#fff;border-radius:7px;padding:8px 12px;font-size:13px;margin-bottom:10px;}
+  .c-now .head{background:var(--gold);color:var(--navy2);}
+  .c-next .head{background:var(--navy);}
+  .c-later .head{background:#6A7390;}
+  .card{background:#fff;border-radius:8px;padding:9px 11px;margin-bottom:8px;font-size:12.5px;color:#333;
+        box-shadow:0 1px 3px rgba(0,0,0,.08);border-left:4px solid var(--gold);}
+  .card.p2{border-left-color:var(--navy);}
+  .card.p3{border-left-color:var(--green);}
+  .card.p4{border-left-color:var(--red);}
+  .tag{display:inline-block;font-size:9.5px;font-weight:700;color:#fff;background:var(--muted);
+       border-radius:10px;padding:1px 7px;margin-top:5px;letter-spacing:.5px;}
+  .t1{background:var(--goldd);} .t2{background:var(--navy);} .t3{background:var(--green);} .t4{background:var(--red);}
+  /* playbook */
+  .gate{counter-reset:g;list-style:none;padding:0;margin:8px 0;}
+  .gate li{position:relative;padding:11px 14px 11px 46px;background:var(--panel);border-radius:8px;margin-bottom:8px;font-size:13.5px;color:var(--slate);}
+  .gate li:before{counter-increment:g;content:counter(g);position:absolute;left:10px;top:10px;width:26px;height:26px;
+      background:var(--gold);color:var(--navy2);border-radius:50%;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:13px;}
+  .gate li b{color:var(--navy);}
+  .legend{font-size:11.5px;color:var(--muted);margin-top:6px;}
+  .legend span{display:inline-block;margin-right:14px;}
+  .dot{display:inline-block;width:10px;height:10px;border-radius:2px;vertical-align:middle;margin-right:4px;}
+  .foot{margin-top:34px;border-top:1px solid var(--line);padding-top:14px;color:var(--muted);font-size:11.5px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kick">PROJECT VANGUARD · PRD</div>
+  <h1>Adopting Singapore's MGF for Siloam's Agentic AI Governance</h1>
+  <div class="sub">A simple operating model to deploy finance agents safely — bounded, accountable, controlled, understood.</div>
+  <div class="meta">Source framework: IMDA, "Model AI Governance Framework for Agentic AI" (Singapore). Adapted for Siloam Hospitals Group — Finance. Draft v1 · directional, pending CFO &amp; Risk endorsement.</div>
+
+  <div class="callout">
+    <b>Why this matters for us:</b> by the framework's own risk test (risk = likelihood × impact), Siloam's finance agents are <b>high-risk by default</b> — they touch financial transactions <i>and</i> sensitive personal/health data under UU PDP. So we don't start light. We start bounded.
+  </div>
+
+  <h2>1 · The model, in one glance — four pillars</h2>
+  <div class="pillars">
+    <div class="pillar"><div class="n">1</div><h3>Assess &amp; bound risks upfront</h3><p>Risk-tier each use case. Give agents least-privilege access and SOP-bound autonomy. Some tasks stay deterministic — not every job suits an agent.</p></div>
+    <div class="pillar"><div class="n">2</div><h3>Make humans accountable</h3><p>Name who owns what. Put real human approval checkpoints at the stakes that warrant them — with override and feedback.</p></div>
+    <div class="pillar"><div class="n">3</div><h3>Technical controls &amp; process</h3><p>Separate sensitive data from the agent's context. Enforce limits by design, not by prompt. Tamper-proof audit trail. Test before, monitor after.</p></div>
+    <div class="pillar"><div class="n">4</div><h3>Enable end-user responsibility</h3><p>Train the people who use and integrate agents to review outputs — not rubber-stamp them. AI output is a draft until a human owns it.</p></div>
+  </div>
+
+  <h2>2 · Who is accountable — four roles (Pillar 2)</h2>
+  <table>
+    <tr><th>MGF role</th><th>At Siloam</th><th>Owns</th></tr>
+    <tr><td><b>Use-case owner</b></td><td>Finance sub-function head (AP, AR/BPJS, Treasury, Tax)</td><td>Is this use case appropriate? Accountable for its use.</td></tr>
+    <tr><td><b>Technology Risk Management</b></td><td>Risk &amp; Compliance + IT Security + DPO (UU PDP)</td><td>Risk assessment, control advice, sign-off before go-live.</td></tr>
+    <tr><td><b>AI Factory</b></td><td>Finance AI CoE (AI Engineer + embedded champions)</td><td>Design, build, guardrails, monitoring.</td></tr>
+    <tr><td><b>End users / SMEs</b></td><td>Controllers &amp; analysts in the workflow</td><td>Review &amp; approve agent output before it's used.</td></tr>
+  </table>
+
+  <h2>3 · The go-live gate — our short playbook</h2>
+  <div class="sub" style="font-size:13.5px">No agent goes live until it clears all seven. Print this; it's the whole governance in one card.</div>
+  <ol class="gate">
+    <li><b>Tiered.</b> Risk-rated by likelihood × impact. Financial-transaction and PHI-touching agents = <b>high tier</b> → strongest controls.</li>
+    <li><b>Bounded.</b> Least-privilege access (only the tools/data it needs); autonomy constrained to a defined SOP; a kill-switch to take it offline.</li>
+    <li><b>Owned.</b> Named use-case owner · Risk sign-off · built by the CoE · SME approves outputs. All four roles assigned.</li>
+    <li><b>Overseen.</b> Human-approval checkpoints matched to the tier — with the power to override, plus a feedback loop. <i>Match oversight to risk: escalation for high-volume recoverable tasks; human approval on every high-stakes output.</i></li>
+    <li><b>Controlled by design.</b> Sensitive PHI/financial data structurally separated from the agent's context; limits enforced by access control, not by prompt; a tamper-proof audit trail of every action.</li>
+    <li><b>Tested.</b> Tested before deployment (incl. red-team); continuously monitored and re-tested after.</li>
+    <li><b>Understood.</b> End users trained to review, not rubber-stamp — AI output is a draft until a human signs it.</li>
+  </ol>
+
+  <h2>4 · Adoption kanban — how we stand it up</h2>
+  <div class="legend">
+    <span><span class="dot" style="background:#E0A82E"></span>Pillar 1 · Risk</span>
+    <span><span class="dot" style="background:#1E2761"></span>Pillar 2 · Accountability</span>
+    <span><span class="dot" style="background:#1C7A4A"></span>Pillar 3 · Controls</span>
+    <span><span class="dot" style="background:#B0463C"></span>Pillar 4 · End users</span>
+  </div>
+  <div class="kan" style="margin-top:10px">
+    <div class="col c-now"><div class="head">NOW · Phase 0–1</div>
+      <div class="card p1">Agent risk-tiering rubric (likelihood × impact)<br><span class="tag t1">Risk</span></div>
+      <div class="card p1">Agent use-case register + intake form<br><span class="tag t1">Risk</span></div>
+      <div class="card p1">Least-privilege + SOP limits per agent<br><span class="tag t1">Risk</span></div>
+      <div class="card p2">Assign the 4 accountable roles (RACI)<br><span class="tag t2">Accountability</span></div>
+      <div class="card p2">Human-approval checkpoints by tier<br><span class="tag t2">Accountability</span></div>
+      <div class="card p3">Tamper-proof audit-trail logging<br><span class="tag t3">Controls</span></div>
+      <div class="card p3">Separate PHI/financial data from agent context (UU PDP)<br><span class="tag t3">Controls</span></div>
+    </div>
+    <div class="col c-next"><div class="head">NEXT · Phase 2–3</div>
+      <div class="card p3">Pre-deployment test suite + red-team<br><span class="tag t3">Controls</span></div>
+      <div class="card p3">Continuous monitoring &amp; drift/eval dashboard<br><span class="tag t3">Controls</span></div>
+      <div class="card p1">Kill-switch + sandboxed env for high-risk agents<br><span class="tag t1">Risk</span></div>
+      <div class="card p4">End-user training: review &amp; override outputs<br><span class="tag t4">End users</span></div>
+      <div class="card p2">Incident &amp; escalation playbook<br><span class="tag t2">Accountability</span></div>
+    </div>
+    <div class="col c-later"><div class="head">LATER · Embed</div>
+      <div class="card p1">Multi-agent interaction controls<br><span class="tag t1">Risk</span></div>
+      <div class="card p2">Periodic governance review &amp; re-tiering<br><span class="tag t2">Accountability</span></div>
+      <div class="card p2">External assurance alignment (OJK, auditors)<br><span class="tag t2">Accountability</span></div>
+      <div class="card p4">Extend framework beyond Finance<br><span class="tag t4">End users</span></div>
+    </div>
+  </div>
+
+  <div class="callout" style="margin-top:18px">
+    <b>One rule to remember:</b> bound by design, not by prompt. If you don't want an agent to do something, remove its access — don't just tell it not to. Where a limit can't be made deterministic, add monitoring and a human in the loop.
+  </div>
+
+  <div class="foot">
+    Source: IMDA (Singapore), "Model AI Governance Framework for Agentic AI." This PRD adapts that framework's four pillars and four accountable roles to Siloam Finance; risk tiers, UU PDP data-handling and OJK alignment are Siloam-specific and require Risk &amp; Compliance sign-off. Directional draft — not legal advice.
+  </div>
+</div>
+</body>
+</html>
